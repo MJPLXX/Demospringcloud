@@ -21,4 +21,10 @@ public class HelloController {
     }
 
 
+    @RequestMapping("/sayHello2")
+    public String sayHello2(String name) {
+        return helloService.obtainOtherServerJsonData(name);
+    }
+
+
 }
